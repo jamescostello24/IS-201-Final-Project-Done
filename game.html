@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>My Video Game</title>
+<!-- Import fun retro font -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+/* BODY STYLING */
+body {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ffe4e1, #d4f1d4); /* soft pastel gradient */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* NAVIGATION */
+nav {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;
+  background-color: #001f4d;
+  color: #add8e6;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 12px;
+  border: 2px solid #001f4d;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #add8e6;
+  color: #001f4d;
+  transform: translateY(-2px);
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+}
+
+/* GAME CONTAINER */
+.game-container {
+  background-color: #ffffff;
+  border: 3px solid #001f4d;
+  border-radius: 15px;
+  padding: 30px 50px;
+  box-shadow: 6px 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 400px;
+}
+
+/* HEADINGS */
+h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5em;
+  color: #b22222; /* cherry red for retro vibe */
+  margin-bottom: 20px;
+}
+
+/* INPUT AND BUTTON */
+input[type="number"] {
+  padding: 10px;
+  font-size: 16px;
+  width: 60px;
+  text-align: center;
+  margin-right: 10px;
+  border: 2px solid #001f4d;
+  border-radius: 8px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #001f4d;
+  color: #add8e6;
+  font-weight: bold;
+  border: 2px solid #001f4d;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #add8e6;
+  color: #001f4d;
+  transform: translateY(-2px);
+}
+
+/* OUTPUT TEXT */
+#output {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #b22222;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<a href="index.html">How‑To</a>
+<a href="resume.html">Résumé</a>
+</nav>
+
+<div class="game-container">
+  <h1>Number Guessing Game</h1>
+  <p>Guess a number between 1 and 10</p>
+  <input type="number" id="guess">
+  <button onclick="checkGuess()">Guess</button>
+  <p id="output"></p>
+</div>
+
+<script>
+const number = Math.floor(Math.random() * 10) + 1;
+
+function checkGuess() {
+  const guess = document.getElementById("guess").value;
+  const output = document.getElementById("output");
+
+  if (guess == number) {
+    output.textContent = "Correct! You win.";
+  } else {
+    output.textContent = "Try again.";
+  }
+}
+</script>
+
+</body>
+</html>

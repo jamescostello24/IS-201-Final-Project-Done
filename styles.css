@@ -1,0 +1,219 @@
+/* ================= Resume Page Styles ================= */
+
+/* STYLE #1 – Background */
+.howto-background {
+  background-color: #d4f1d4; /* light green */
+  font-family: 'Trebuchet MS', Helvetica, sans-serif; /* fun but professional */
+  color: #001f4d; /* navy blue */
+  padding: 50px 20px; /* give some space around content */
+  min-height: 100vh; /* fill the screen */
+}
+
+/* Header / Name */
+.resume-header {
+  text-align: center;
+  font-size: 3em; /* bigger than rest */
+  font-weight: bold;
+  margin: 40px 0;
+  font-family: 'Courier New', Courier, monospace; /* vintage style font */
+  letter-spacing: 2px; /* subtle styling */
+}
+
+/* Section Titles */
+.resume-section-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #001f4d;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  border-bottom: 3px solid #001f4d; /* vintage 60s underline style */
+  padding-bottom: 5px;
+}
+
+/* Content container */
+.container {
+  max-width: 900px;
+  margin: auto;
+  background-color: #f7f7f0; /* subtle off-white behind content */
+  padding: 30px;
+  border-radius: 12px;
+  border: 2px solid #001f4d; /* navy border for vintage feel */
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Section blocks (div styling) */
+.section {
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 25px 0;
+  border-radius: 8px;
+  border-left: 6px solid #001f4d; /* vintage accent */
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Lists for education, experience, skills */
+.resume-list {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.5;
+}
+
+/* Skills badges (optional) */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.skill-badge {
+  background-color: #001f4d;
+  color: #d4f1d4;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+/* Optional: Anchor link styling */
+.back-top a {
+  color: #001f4d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.back-top a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Resume Vintage 60s Add-On ================= */
+.resume-vintage {
+  background-color: #add8e6; /* light blue */
+  padding: 50px 20px;
+  min-height: 100vh;
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  color: navy; 
+}
+
+/* Header / Name */
+.resume-vintage .resume-header,
+.resume-vintage h1 {
+  font-family: 'Pacifico', cursive; /* retro cursive font */
+  font-size: 3.5em;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0px rgba(0,0,0,0.2); /* subtle shadow */
+}
+
+/* Section containers */
+.resume-vintage .container {
+  max-width: 900px;
+  margin: auto;
+  background-color: #f7f7f0; /* off-white */
+  padding: 30px;
+  border-radius: 18px;
+  border: 3px solid #001f4d; /* navy border for vintage feel */
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+
+/* Section blocks */
+.resume-vintage .container h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  color:#b22222;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #001f4d;
+  padding-bottom: 5px;
+  text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+}
+
+/* Lists */
+.resume-vintage .resume-list,
+.resume-vintage ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  line-height: 1.6;
+}
+
+/* Skills badges */
+.resume-vintage .skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.resume-vintage .skill-badge {
+  background-color: #001f4d;
+  color: #add8e6; /* light blue text */
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 0.9em;
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+/* Section flex wrapper (if you want text + images later) */
+.resume-vintage .section-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #001f4d;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Optional anchor links */
+.resume-vintage .back-top a {
+  color: #001f4d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.resume-vintage .back-top a:hover {
+  text-decoration: underline;
+}
+
+/* ================= Resume Page Navigation Links ================= */
+.resume-vintage nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.resume-vintage nav a {
+  display: inline-block;
+  background-color: #001f4d;  /* navy button-style */
+  color: #add8e6;             /* light blue text */
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Pacifico', cursive;  /* retro font to match headings */
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 12px;
+  border: 2px solid #001f4d;
+  box-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  transition: all 0.2s ease-in-out;
+}
+
+.resume-vintage nav a:hover {
+  background-color: #add8e6;  /* swap colors on hover */
+  color: #001f4d;
+  box-shadow: 3px 3px 6px rgba(0,0,0,0.15);
+  transform: translateY(-2px);  /* subtle lift effect */
+}
+
+.how-to-image {
+   max-width: 100%;   /* never exceeds container width */
+  height: auto;      /* maintain aspect ratio */
+  display: block;
+  margin: 20px auto; /* center image with some spacing */
+  border-radius: 8px; /* optional: rounded corners for style */
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1); 
+}
